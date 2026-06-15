@@ -2,7 +2,23 @@
   "name": "vscode-game",
   "displayName": "Game Hub",
   "description": "Play small games inside VS Code. Pick from a menu and play in a panel.",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "ino-chueh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nvlznn/vscode-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nvlznn/vscode-game/issues"
+  },
+  "keywords": [
+    "game",
+    "games",
+    "snake",
+    "arcade",
+    "fun"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },
