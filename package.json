@@ -1,0 +1,41 @@
+{
+  "name": "vscode-game",
+  "displayName": "Game Hub",
+  "description": "Play small games inside VS Code. Pick from a menu and play in a panel.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "games.open",
+        "title": "Open Game",
+        "category": "Game Hub"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "games.open",
+        "key": "ctrl+shift+g",
+        "mac": "cmd+shift+g"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "compile": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.0"
+  }
+}
