@@ -1,5 +1,6 @@
 import * as vscode from "vscode";
 import { snakeGame } from "./games/snake";
+import { minesweeperGame } from "./games/minesweeper";
 
 /**
  * A playable game. Each game lives in its own folder under `src/games/`
@@ -25,7 +26,7 @@ export interface Game {
 }
 
 /** All registered games, in menu order. */
-export const games: readonly Game[] = [snakeGame];
+export const games: readonly Game[] = [snakeGame, minesweeperGame];
 
 export function findGame(id: string): Game | undefined {
   return games.find((g) => g.id === id);
